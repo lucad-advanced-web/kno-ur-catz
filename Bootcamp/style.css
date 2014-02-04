@@ -1,0 +1,119 @@
+body  {
+	//background: #000000;
+	font-family: helvetica CY;
+	font-size: 12pt;
+	color: white;
+	background: url(pattern.jpg);
+	background-size: 150%;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	margin: 0;
+}
+
+.header{
+	font-size: 2em;
+	padding: 0.25em;
+	padding-left: 0.7em;
+	font-family: helvetica CY;
+	color: white;
+	background-color: black;
+	width: 100%;
+	margin: 0;
+	//position: fixed;
+}
+
+a:visited {
+	color: white;
+	text-decoration: none;
+}
+a:link {
+	color: white;
+	text-decoration: none;
+}
+
+.about{
+	background: black;
+	margin-top: 20px;
+	margin-left: 1em;
+	margin-right: 1em;
+	padding-left: 2em;
+	background:rgba(0,0,0,0.8);
+	float: left;
+}
+
+.about p{
+	font-size: 11pt;
+	padding-right: 1em;
+}
+
+.video{
+	margin-top: 20px;
+	position: relative;
+    padding-bottom: 56.25%;
+    height: 0; 
+    overflow: hidden;
+    margin-left: 1em;
+    margin-right: 1em;
+}
+
+.video iframe,
+.video object,
+.video embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+ }
+
+.Catz { 
+	font-size: 12pt;
+	background: black;
+	margin-top: 20px;
+	margin-left: 1em;
+	margin-right: 1em;
+	padding-left: 2em;
+	padding-top: 5%;
+	padding-bottom: 5%;
+	background:rgba(0,0,0,0.8);
+	float: left;
+}
+
+.Catz img {
+	float: left;
+	width: 50%;
+	margin-left: -18px;
+	padding-right: 5%;
+}
+
+
+
+
+
+/*******  BEGIN MEDIA QUERIES *******/
+
+/* 481px - 768px */
+@media screen and (min-width:480px) {
+body  {
+	background: #FF0000;
+}
+}
+
+
+
+/* 768px - 1024px */
+@media screen and (min-width:768px) {
+body  {
+background: #00FF00;   /* Green */
+}
+}
+
+
+
+/* 1024px and Larger  */
+@media screen and (min-width:1024px) {
+body  {
+background: #0000FF;   /* Blue */
+}
+}
+

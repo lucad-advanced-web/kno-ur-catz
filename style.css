@@ -1,0 +1,77 @@
+body  {
+	//background: #000000;
+	font-family: helvetica CY;
+	color: white;
+}
+
+
+
+
+/*******  BEGIN MEDIA QUERIES *******/
+
+/* 481px - 768px */
+@media screen and (min-width:480px) {
+body  {
+	//background: #FF0000;
+	background: url(pattern.jpg);
+	background-size: 100%;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	margin: 0;
+}
+.video{
+	width: 100%;
+}
+.about{
+	//width: 80%;
+}
+}
+
+
+
+/* 768px - 1024px */
+@media screen and (min-width:768px) {
+body  {
+background: #00FF00;   /* Green */
+}
+}
+
+
+
+/* 1024px and Larger  */
+@media screen and (min-width:1024px) {
+body  {
+background: #0000FF;   /* Blue */
+}
+}
+
+.header{
+	font-size: 3em;
+	padding: 0.25em;
+	padding-left: 0.7em;
+	font-family: helvetica CY;
+	color: white;
+	background-color: black;
+	width: 100%;
+	margin: 0;
+	//position: fixed;
+}
+
+a:visited {
+	color: white;
+	text-decoration: none;
+}
+a:link {
+	color: white;
+	text-decoration: none;
+}
+
+.about{
+	background: black;
+	margin-top: 20px;
+	margin-left: 1em;
+	padding-left: 2em;
+	background:rgba(0,0,0,0.8);
+	float: left;
+
+}

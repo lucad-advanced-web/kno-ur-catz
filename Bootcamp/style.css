@@ -1,6 +1,6 @@
 body  {
 	//background: #000000;
-	font-family: helvetica CY;
+	font-family:Arial, 'helvetica CY';
 	font-size: 12pt;
 	color: white;
 	background: url(pattern.jpg);
@@ -14,7 +14,7 @@ body  {
 	font-size: 2em;
 	padding: 0.25em;
 	padding-left: 0.7em;
-	font-family: helvetica CY;
+	font-family:Arial, 'helvetica CY';
 	color: white;
 	background-color: black;
 	width: 100%;
@@ -32,11 +32,14 @@ a:link {
 }
 
 .about{
+	font-size: 12pt;
 	background: black;
 	margin-top: 20px;
 	margin-left: 1em;
 	margin-right: 1em;
 	padding-left: 2em;
+	//padding-top: 5%;
+	padding-bottom: 5%;
 	background:rgba(0,0,0,0.8);
 	float: left;
 }
@@ -77,6 +80,7 @@ a:link {
 	padding-bottom: 5%;
 	background:rgba(0,0,0,0.8);
 	float: left;
+
 }
 
 .Catz img {
@@ -84,9 +88,27 @@ a:link {
 	width: 50%;
 	margin-left: -18px;
 	padding-right: 5%;
+	padding-bottom: 5%;
 }
 
+.cat-single {
+	width:100%;
+	float: left;
+}
 
+.Newz{
+	font-size: 12pt;
+	background: black;
+	margin-top: 20px;
+	margin-left: 1em;
+	margin-right: 1em;
+	padding-left: 2em;
+	padding-top: 5%;
+	padding-right: 2em;
+	padding-bottom: 5%;
+	background:rgba(0,0,0,0.8);
+	float: left;
+}
 
 
 
@@ -97,6 +119,19 @@ a:link {
 body  {
 	background: #FF0000;
 }
+.video iframe,
+.video object,
+.video embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 560px;
+    height: 315px;
+ }
+ .wrapper {
+	width:100%;
+	margin:0 auto;
+}
 }
 
 
@@ -105,6 +140,12 @@ body  {
 @media screen and (min-width:768px) {
 body  {
 background: #00FF00;   /* Green */
+
+}
+
+.wrapper {
+	width:1000px;
+	margin:0 auto;
 }
 }
 
@@ -114,6 +155,21 @@ background: #00FF00;   /* Green */
 @media screen and (min-width:1024px) {
 body  {
 background: #0000FF;   /* Blue */
+
+}
+.wrapper {
+	width:1200px;
+	margin:0 auto;
+}
+
+.about {
+	width:400px;
+	float:right;
+}
+
+.Catz {
+	width:600px;
+	float:left;
 }
 }
 

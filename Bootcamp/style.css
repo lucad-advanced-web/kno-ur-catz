@@ -11,7 +11,7 @@ body  {
 }
 
 .header{
-	font-size: 2em;
+	font-size: 20pt;
 	padding: 0.25em;
 	padding-left: 0.7em;
 	font-family:Arial, 'helvetica CY';
@@ -22,24 +22,24 @@ body  {
 	//position: fixed;
 }
 
-a:visited {
+a.white:visited {
 	color: white;
 	text-decoration: none;
 }
-a:link {
+a.white:link {
 	color: white;
 	text-decoration: none;
 }
 
-.about{
+.about,.Newz{
 	font-size: 12pt;
 	background: black;
 	margin-top: 20px;
-	margin-left: 1em;
-	margin-right: 1em;
-	padding-left: 2em;
-	//padding-top: 5%;
-	padding-bottom: 5%;
+	margin-right: 5%;
+	margin-left: 5%;
+	padding-left: 20px;
+	padding-right: 20px;
+	padding-bottom: 3%;
 	background:rgba(0,0,0,0.8);
 	float: left;
 }
@@ -50,21 +50,13 @@ a:link {
 }
 
 .video{
-	margin-top: 20px;
+	margin-top: 5%;
 	position: relative;
-    padding-bottom: 56.25%;
-    height: 0; 
-    overflow: hidden;
     margin-left: 1em;
     margin-right: 1em;
 }
 
-.video iframe,
-.video object,
-.video embed {
-    position: absolute;
-    top: 0;
-    left: 0;
+.video iframe {
     width: 100%;
     height: 100%;
  }
@@ -73,10 +65,11 @@ a:link {
 	font-size: 12pt;
 	background: black;
 	margin-top: 20px;
-	margin-left: 1em;
-	margin-right: 1em;
+	margin-left: 5%;
+	margin-right: 5%;
 	padding-left: 2em;
 	padding-top: 5%;
+	padding-right: 20px;
 	padding-bottom: 5%;
 	background:rgba(0,0,0,0.8);
 	float: left;
@@ -94,44 +87,94 @@ a:link {
 .cat-single {
 	width:100%;
 	float: left;
+	padding: 1%;
+	font-weight: bold;
 }
 
-.Newz{
-	font-size: 12pt;
-	background: black;
-	margin-top: 20px;
-	margin-left: 1em;
-	margin-right: 1em;
-	padding-left: 2em;
-	padding-top: 5%;
-	padding-right: 2em;
-	padding-bottom: 5%;
-	background:rgba(0,0,0,0.8);
+.cat-single p{
+	font-weight: normal;
+}
+
+.newz-article{
+	width: 100%;
 	float: left;
+	font-weight: bold;
 }
 
+.newz-article p{
+	font-weight: normal;
+}
 
+a:visited {
+	color: #dba901;
+	text-decoration: none;
+}
+a:link {
+	color: #dba901;
+	text-decoration: none;
+}
 
 /*******  BEGIN MEDIA QUERIES *******/
 
 /* 481px - 768px */
 @media screen and (min-width:480px) {
 body  {
-	background: #FF0000;
+	//background: #FF0000;
+	background: url(pattern.jpg);
+	background-size: 150%;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
 }
-.video iframe,
-.video object,
-.video embed {
-    position: absolute;
-    top: 0;
-    left: 0;
+
+.header{
+	font-size: 30pt;
+	padding: 0.25em;
+	padding-left: 0.7em;
+	font-family:Arial, 'helvetica CY';
+	color: white;
+	background-color: black;
+	width: 100%;
+	margin: 0;
+	//position: fixed;
+}
+.video {
+	margin:5% auto 0 auto;
+	width: 560px;
+}
+
+.video iframe {
     width: 560px;
     height: 315px;
  }
+
  .wrapper {
 	width:100%;
 	margin:0 auto;
 }
+
+.Catz img {
+	float: left;
+	width: 40%;
+	margin-left: -18px;
+	padding-right: 5%;
+	padding-bottom: 5%;
+}
+
+.Catz { 
+	width: 36%;
+	float: left;
+}
+ .about{
+ 	width: 24%;
+ 	float: right;
+ 	margin: 0, auto;
+}
+.Newz{
+	width: 24%;
+	float: right;
+	margin: 0, auto;
+}
+
 }
 
 
@@ -139,14 +182,44 @@ body  {
 /* 768px - 1024px */
 @media screen and (min-width:768px) {
 body  {
-background: #00FF00;   /* Green */
+	//background: #00FF00;
+	background: url(pattern.jpg);
+	background-size: 125%;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
 
 }
 
 .wrapper {
-	width:1000px;
+	width:100%;
 	margin:0 auto;
 }
+
+.video {
+	margin:2% auto 0 auto;
+	width: 600px;
+}
+
+.video iframe{
+    width: 560px;
+    height: 315px;
+}
+
+.Catz { 
+	width: 40%;
+	float: left;
+}
+ .about{
+ 	width: 27%;
+ 	float: right;
+ 	margin: 0, auto;
+}
+.Newz{
+	width: 27%;
+	float: right;
+	margin: 0, auto;
+}
+
 }
 
 
@@ -154,22 +227,62 @@ background: #00FF00;   /* Green */
 /* 1024px and Larger  */
 @media screen and (min-width:1024px) {
 body  {
-background: #0000FF;   /* Blue */
+	//background: #0000FF;
+	background: url(pattern.jpg);
+	background-size: 100%;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+
 
 }
 .wrapper {
-	width:1200px;
+	width:100%;
 	margin:0 auto;
 }
 
-.about {
-	width:400px;
-	float:right;
+.video {
+	margin:2% 5%;
+	float: left;
 }
 
-.Catz {
-	width:600px;
-	float:left;
+.video iframe{
+    width: 560px;
+    height: 315px;
+}
+
+.Catz { 
+	width: 43%;
+	float: left;
+	padding-top: 2%;
+	padding-bottom: 2%;
+}
+ .about{
+ 	width: 30%;
+ 	float: right;
+ 	margin-top: 2%;
+ 	padding-bottom: 11%;
+ 	//margin-right: auto;
+ 	margin-left: auto;
+}
+
+.Newz{
+	width: 30%;
+ 	float: right;
+ 	//margin-top: 2%;
+ 	//margin-right: auto;
+ 	margin-left: auto;
+}
+
+.header{
+	font-size: 40pt;
+	padding: 0.25em;
+	padding-left: 0.7em;
+	font-family:Arial;
+	color: white;
+	background-color: black;
+	width: 100%;
+	margin: 0;
+	//position: fixed;
 }
 }
 

@@ -10,10 +10,10 @@ body  {
 	margin: 0;
 }
 
+
+/* Cleaned up paddings out of .header */
 .header{
 	font-size: 20pt;
-	padding: 0.25em;
-	padding-left: 0.7em;
 	font-family:Arial, 'helvetica CY';
 	color: white;
 	background-color: black;
@@ -21,6 +21,18 @@ body  {
 	margin: 0;
 	//position: fixed;
 }
+
+
+/* MATT ADDED THIS */
+/* Select the A tag inside header and apply padding directly to it. */
+.header a {
+	padding:15px 0px 15px 20px;
+}
+
+
+
+
+
 
 a.white:visited {
 	color: white;
@@ -126,10 +138,10 @@ body  {
 	background-attachment: fixed;
 }
 
+
+/* Cleaned up paddings out of .header */
 .header{
 	font-size: 30pt;
-	padding: 0.25em;
-	padding-left: 0.7em;
 	font-family:Arial, 'helvetica CY';
 	color: white;
 	background-color: black;
@@ -137,6 +149,10 @@ body  {
 	margin: 0;
 	//position: fixed;
 }
+
+
+
+
 .video {
 	margin:5% auto 0 auto;
 	width: 560px;
@@ -273,10 +289,11 @@ body  {
  	margin-left: auto;
 }
 
+
+
+/* Cleaned up paddings out of .header */
 .header{
 	font-size: 40pt;
-	padding: 0.25em;
-	padding-left: 0.7em;
 	font-family:Arial;
 	color: white;
 	background-color: black;
@@ -284,5 +301,8 @@ body  {
 	margin: 0;
 	//position: fixed;
 }
+
+
+
 }
 

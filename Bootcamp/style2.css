@@ -12,14 +12,16 @@ body  {
 
 .header{
 	font-size: 20pt;
-	padding: 0.25em;
-	padding-left: 0.7em;
 	font-family:Arial;
 	color: white;
 	background-color: black;
 	width: 100%;
 	margin: 0;
 	//position: fixed;
+}
+
+.header a {
+	padding:15px 0px 15px 20px;
 }
 
 a.white:visited {
@@ -99,9 +101,7 @@ body  {
 
 .header{
 	font-size: 30pt;
-	padding: 0.25em;
-	padding-left: 0.7em;
-	font-family:Arial, 'helvetica CY';
+	font-family:Arial;
 	color: white;
 	background-color: black;
 	width: 100%;
@@ -218,8 +218,6 @@ body  {
 
 .header{
 	font-size: 40pt;
-	padding: 0.25em;
-	padding-left: 0.7em;
 	font-family:Arial;
 	color: white;
 	background-color: black;
